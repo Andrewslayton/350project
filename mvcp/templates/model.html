@@ -1,0 +1,32 @@
+{% extends "view.html" %}
+{% block title %}Home page {% endblock %}
+{% block content %}
+<!-- Model displays the basic item view of the shop, each "product information" button leads to more information about the product-->
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <body> 
+            <h2
+                title-text="OUT PRODUCTS ">
+            </h2>
+            <img src="{{url_for('static',filename='hockey.jpg')}}" width="30%" height="30%">
+            <p id="p1" class="example" style =" text-align: center;">  
+                <br>
+                <a class="dropdown-item" href="/1">learn more about our hockey stick!</a>
+            </p>
+            <img src="{{url_for('static',filename='skates.jpg')}}" width="30%" height="30%">
+            <p id="p1" class="example" style =" text-align: center;">  
+                <br>
+                <a class="dropdown-item" href="/2">learn more about our hockey skates!</a>
+            </p>
+            <img src="{{url_for('static',filename='wax.jpg')}}" width="30%" height="30%">
+            <p id="p1" class="example" style =" text-align: center;">  
+                <br>
+                <a class="dropdown-item" href="/3">learn more about our wax!</a>
+            </p>
+
+        </body>
+    
+</html>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+
+{% block title %}product 3 {% endblock %}
+{% block content %}
+<!-- Acts as an extension of model to display further information about product 3-->
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <body> 
+            <h2
+                title-text="product 3 ">
+            </h2>
+            <img src="{{url_for('static',filename='wax.jpg')}}" width="30%" height="30%">
+            <p id="p1" class="example" style =" text-align: center;">  
+                <br>
+
+            </p>
+            <h2>Price: $10</h2>
+            <body>Hockey wax, premium concotion of the most adhesive materials so you only need to apply it once every 4 games!</body>
+            <p></p> <body>Originally made in 1933 we are the original tape wax for hockey</body>
+            <p></p><body>returns accepted</body>
+            <p id="p1" class="example" style =" text-align: center;">  
+                <br>
+                <a class="dropdown-item" href="/">back to home</a>
+            </p>
+            <p id="p1" class="example" style =" text-align: center;">  
+                <br>
+                <a class="dropdown-item" href="/1">Product 1 (hockey stick)</a>
+            </p>
+            <p id="p1" class="example" style =" text-align: center;">  
+                <br>
+                <a class="dropdown-item" href="/2">product 2 (hockey skates)</a>
+            </p>
+        </body>
+    
+</html>
+
+{% endblock %}

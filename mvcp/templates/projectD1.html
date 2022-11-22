@@ -1,0 +1,36 @@
+{% block title %}product1 {% endblock %}
+{% block content %}
+<!-- Acts as an extension of model to display further information about product 1--> 
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <body> 
+            <h2
+                title-text="product1 ">
+            </h2>
+            <img src="{{url_for('static',filename='hockey.jpg')}}" width="30%" height="30%">
+            <p id="p1" class="example" style =" text-align: center;">  
+                <br>
+
+            </p>
+            <h2>Price:$350</h2>
+            <body>
+                Can be fitted for height, Fiberglass shaft with custom made blade.<p></p> Available online and at all locations. <p></p>Total weight of 3 pounds and voted "best hockey stick of the decade"
+            </body>
+            <p id="p1" class="example" style =" text-align: center;">  
+                <br>
+                <a class="dropdown-item" href="/">back to home</a>
+            </p>
+            <p id="p1" class="example" style =" text-align: center;">  
+                <br>
+                <a class="dropdown-item" href="/2">Product 2 (hockey skates)</a>
+            </p>
+            <p id="p1" class="example" style =" text-align: center;">  
+                <br>
+                <a class="dropdown-item" href="/3">product 3 (wax)</a>
+            </p>
+        </body>
+    
+</html>
+
+{% endblock %}

@@ -1,0 +1,39 @@
+
+{% block title %}product2 {% endblock %}
+{% block content %}
+<!-- Acts as an extension of model to display further information about product 2-->
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <body> 
+            <h2
+                title-text="product 2 ">
+            </h2>
+            <img src="{{url_for('static',filename='skates.jpg')}}" width="30%" height="30%">
+            <p id="p1" class="example" style =" text-align: center;">  
+                <br>
+
+            </p>
+            <h2>Price: $500</h2>
+            <body>Composed of the perfectly bakable material to ensure the perfect fit around the foot.</body>
+            <p></p><body>Light,padded, and hand crafted.</body>
+                <p></p><body> 1 free bake of the skate at any of our facilities</body>
+                <p></p>Fits sizes 4-12 in men's and women's
+            <p id="p1" class="example" style =" text-align: center;">  
+                <br>
+                <a class="dropdown-item" href="/">back to home</a>
+            </p>
+            <p id="p1" class="example" style =" text-align: center;">  
+                <br>
+                <a class="dropdown-item" href="/1">Product 1 (hockey stick)</a>
+            </p>
+            <p id="p1" class="example" style =" text-align: center;">  
+                <br>
+                <a class="dropdown-item" href="/3">product 3 (wax)</a>
+            </p>
+
+        </body>
+    
+</html>
+
+{% endblock %}
